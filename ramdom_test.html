@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección Aleatoria</title>
+    <script>
+        function redirectToRandomLink() {
+            var urls = [
+"https://forms.gle/SP22dpBvVw3NNdiL7",
+"https://forms.gle/quiJwgaCD5uDs6hJ9",
+"https://forms.gle/5hEWtxqWrxmgjTEXA",
+"https://forms.gle/8ycT3X23oZeRS6AG7",
+"https://forms.gle/Tsx1Cb7AQrWfBMUg9",
+"https://forms.gle/3JNJRnPhJdm82GZe7",
+"https://forms.gle/fSEG2PWTnwLoQFd78",
+"https://forms.gle/L8VPpbbw1tzdkDHc6",
+"https://forms.gle/HGzpMtdqEJXzMA498"
+            ];
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        }
+    </script>
+</head>
+<body onload="redirectToRandomLink()">
+    <p>Redirigiendo...</p>
+</body>
+</html>
