@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección Aleatoria</title>
+    <script>
+        function redirectToRandomLink() {
+            var urls = [
+"https://docs.google.com/forms/d/e/1FAIpQLSeYpgeVjk4mNUNNWFEg3kyRLVhpQkgyszw3XavjVTsV_feGMw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSfJkbipHrkDM1DEW6Ixw82YjjeXSDIWlSe_D0B2Sf1sR2VXIg/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSekUwISoPpEHTXid9qO3wQjVp1W4RHszLBTIDxF_3rGP9d-kg/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSf_hIRkuSQd4A6WdfNEKl41rrq-wHKwyVFs3so10Fh9bXUkRg/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScy9rzfI_CRSfekUGF4_KjkVvgQS42DQKeJME1QubC6JyYWlA/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSeZlZlHM_8fE7wKbTF1mGa-Dcmu3C4ckjOKKDy3qJNznCAYNA/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSf0N1OZdC_M2RW7Hbm6RDuGRQuB5pTL5cQWYPPgu19-lO_94w/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScStNtI_15xZi0scnZwFp9Tt88gdu0m05jpKSw5uaVz-RD4xw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSf74mZAKiRDETicjP-fDsJ17qGltM0N9biQ8Ioqvy48hsemiw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSejVVImVu5XFVOE3iWe-zLudhdiD7TigW-Jw8_hsybfsvd8JQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScEL-gHyK21VRTRDn22fUWQo9dFmlKaP-uaSxpRaPU5_3Xv5w/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSeL5eMEQ6JFhWxZMTDp6Ha4oDMxvLywE8aZH4P1Nec6jsCeSw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScQwUvaq_mnhh8S-Gqt5pL31Lsp5XaoPqDFO1Ml56igXyusyA/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSfGJPzOZpLsKYascHtJBeFX1QnQNBO7ok61GnoWz8A-5jECdQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScV6lwjx_9yv8WbIyCtouRRtXGNSClLhGBaMxTxrybzKMhnfg/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSe6WfTYRTp0b5E7ZBZrEU_VYBzoC_5ug-3GMfKBTyL8R7RTRw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSfnWBrYd0eU5acnogkGdfOJadD5Oz3LjeHR4zB5Y436PFIAkA/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScCRZp8ql47RZcaL1tKLaBWNhd-pjINRMPcuCk_grRdaB93hQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSetcpIaUKALam7QNeYgYjazhgl6Eu-c26uw7LHM0rF2Y84p2g/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSdkcYC5x_0ZqXbU_vX3FIprI4ZvftyJNk-uIHgJYbQo2Swgww/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSdBUUQLR3aDJb28UbGIhC-TBSOi6vXPlVVVpJkJg8KwkSBlcQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSdcs9JtzNLnAUTKuZaWFNoo9U-ReB_sWEnCtrqd07qBGbzDvQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScSSGe-ojQY8gkT161ka9WNuk3U9xcqNJGMF8LltbgYU7r8IQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSeMFRADI07bb9PK42fRW8caerZquVTE_G0Rqj0LvqHXMwCjbQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSd9IczkA808prelImZ0WATwE3N8lKHW9YSguJkvfoH2sJQwaQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSf8gR8QDLVunlixb5dEkCmQ8sqvdvb8-RxYCdLI2D8j8L0ONw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSczUWgsUET7ok6qU5hAVMxtnQ17NiVu2_Dc3fIna5pM5CXZXA/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScrS2nqDtWt_mE1B-e36YqmU9yEwiU0F3Z7MKcHvwvJCCi8xQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSfTwz1SU3IYQYx1vn7-ikaO3wEHJOcIbLIBqZAW1m1HzmddwA/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSdWy-jn2I-KwZqz_7ZkjUiKkLlOJY79zy0WAY3853hcLyIBGA/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSeWLcSRXj6l7aGwsGupHe0_anzJobcWWEL9AcyQDnxwTyCRvw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSeWTUQQR1uHcgoK2O4xmdpKO-F1Wge7b9kviRdVtxked4jp2g/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSd6Wq6HWW4LJnhU-reM9mzKH5POLkjWaCiuKjQojdgk8F4x3Q/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSfFg3n9MF0m8Dumj9WbnTqAmkkveljx8N1jaKp4ihizuVor0w/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSeBy3SpDb8RIEpe6soc9rASyLWSw3B9CV3GmDFYLToWTI5WxA/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSeJ64VRTBnR-E2mbUfx78dhXne8JhoN_FMQY2bPl7G72wAzXg/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSciJI7SrKWBpQWlMnCuUN033PUOxVpgfUQQh5LyMe1-cJzfVQ/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLScjYSORu1Qqd5AzojFx1c7y44BIP3UUHoWi8nHQOcKHGo_wHw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSfjxhAADdgcDj1e5tQVPlNNOlM6a61eGaUTTuSsn6rxxh2ZUw/viewform?usp=sf_link",
+"https://docs.google.com/forms/d/e/1FAIpQLSf6b2aCool-CmVf2o0fNdqGNmuX_65CyGtIMEPyVRrwI0kOiA/viewform?usp=sf_link"
+            ];
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        }
+    </script>
+</head>
+<body onload="redirectToRandomLink()">
+    <p>Redirigiendo...</p>
+</body>
+</html>
